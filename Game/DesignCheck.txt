@@ -1,0 +1,44 @@
+For our minimax procedure:
+
+It'll use legal moves, game status, estimate_value, next_state
+
+1. for example the root list, then run through a tree for each
+legal move using estimate_value to predict
+
+2. If there are no legal moves available there will be a draw, and that
+only occurs if the board is full and its the AIs turn
+
+3. The AI will assume that the other player is trying to make them lose,
+therefore AI assumes the other player will play perfectly
+
+First priority is make connect four if there are 3 in a row
+Second priority is block 4 if there is one
+Third priority is set up win
+Fourth priority is prevent other player from setting up
+
+*Make list of priorities
+
+AI will always assume that the other person plays perfectly therefore
+it makes its moves based on that
+
+Should work against AI or human
+
+Player will input Move of number, then it'll turn that into a move
+If they provide invalid input, provide failwith. Ask for another move
+Implement a trywith or raise exception if there is an out of bounds move
+
+Explanation for how referee works:
+prints current game state
+Then matches that with win, draw, ongoing and prints that
+If win or draw, end
+else for ongoing print who's turn it is
+Then prompt other player for move
+Print the move they make
+Failure otherwise
+Then loop
+
+Print the game
+Prompt players to move
+Keep track of who has won
+
+NOTE THAT

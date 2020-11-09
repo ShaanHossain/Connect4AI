@@ -1,0 +1,27 @@
+(* NOTE there will be a procedure that takes in the move as one argument and
+the other argument will be the state of the game, and the other output will
+be what is the result of dropping that connect 4 piece in that column *)
+
+(* NOTE we should represent a non value as an option or a number *)
+
+(* NOTE represent each list a column *)
+
+(* NOTE don't 0 index if we want tournament *)
+
+(* NOTE check tiles in diagonal *)
+
+(* Add 0 spots so that we could align any diagonal into a row *)
+
+Questions for TA:
+
+Can we check_expects constructs_board instead of initial_state
+-> as initial_state doesn't take in any arguments
+
+NOTE one check_expect for whatever our rows and columns are
+
+Ask about paralegal and the problem we came across
+
+Ask about progress so far and optimization on estimate_value for columns
+- Go to diagonal
+
+Subsequences
